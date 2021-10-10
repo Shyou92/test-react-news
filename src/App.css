@@ -1,1 +1,25 @@
+.header {
+  text-align: center;
+}
 
+.line {
+  width: 90%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  scrollbar-width: none;
+  overflow-x: scroll;
+}
+
+.items::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}

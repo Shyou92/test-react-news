@@ -1,1 +1,7 @@
+@import './vendor/normalize.css';
+
 @import './App.css';
+@import './components/Preloader/Preloader.css';
+@import './components/News/News.css';
+@import './components/NewsList/NewsList.css';
+@import './components/NewsCard/NewsCard.css';

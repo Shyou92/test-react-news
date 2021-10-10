@@ -1,0 +1,31 @@
+.card {
+  margin: 0 20px 0 0;
+  padding: 0;
+  width: 450px;
+  height: 450px;
+  text-align: center;
+  display: inline-block;
+  border: 1px solid grey;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.card__header {
+  font-size: 14px;
+  height: 70px;
+}
+
+.card__photo {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__text {
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.card__rating {
+  margin: 10px 0 0;
+  padding: 0;
+}
