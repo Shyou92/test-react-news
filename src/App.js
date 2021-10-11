@@ -1,20 +1,20 @@
-import News from './components/News/News';
-import { useState } from 'react'
+import { useState, useLayoutEffect } from 'react'
 import Preloader from './components/Preloader/Preloader';
 import Scrollable from './components/Scrollable/Scrollable';
+import News from './components/News/News';
 
 function App() {
-  const [loading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoaded] = useState(false);
 
-  function loadPage() {
-    setIsLoading(false);
-  }
+  useLayoutEffect(() => {
+    setIsLoaded(true);
+  }, []);
 
-  setTimeout(() => loadPage(), 500);
+  setInterval(() => setIsLoaded(false), 3500);
 
   return (
     <div className="App">
-      {loading ? <Preloader/> :
+      {isLoading ? <Preloader/> :
       <>
         <h2 className="header">Gatsby News</h2>
         <hr className="line"/>
